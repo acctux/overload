@@ -1,0 +1,16 @@
+[Unit]
+Description=Refresh pacman package database once per boot
+After=graphical.target
+Requires=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/sleep 60
+ExecStart=/usr/bin/pacman -Sy --noconfirm
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
+

@@ -1,0 +1,10 @@
+[Unit]
+Description=Ensure default TLP config and optional blacklist config
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/power/tlp-conf-service.sh
+
+[Install]
+WantedBy=multi-user.target
