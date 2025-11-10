@@ -1,0 +1,11 @@
+[Unit]
+Description=Pacman Packages Refresh Timer
+
+[Timer]
+OnBootSec=5min
+OnUnitInactiveSec=120min
+RandomizedDelaySec=10min
+Unit=pacman-refresh.service
+
+[Install]
+WantedBy=multi-user.target
