@@ -1,9 +1,10 @@
 [Unit]
-Description=Run root.hints monthly
+Description=Run moduledetect weekly
 
 [Timer]
-OnCalendar=monthly
+OnCalendar=weekly
 Persistent=true
 
 [Install]
 WantedBy=timers.target
+

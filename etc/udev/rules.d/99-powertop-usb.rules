@@ -1,0 +1,12 @@
+# Set PCI devices to auto power control
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb5", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb3", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb10", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb1", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb8", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb6", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb4", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb2", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="3-3", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb9", ATTR{power/wakeup}="enabled"
+ACTION=="add", SUBSYSTEM=="usb", KERNEL=="usb7", ATTR{power/wakeup}="enabled"

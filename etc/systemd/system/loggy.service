@@ -1,0 +1,14 @@
+[Unit]
+Description=My Custom Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/loggy.sh
+# Remove Restart to run only once
+User=root
+WorkingDirectory=/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
+

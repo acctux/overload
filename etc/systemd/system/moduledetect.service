@@ -1,0 +1,7 @@
+[Unit]
+Description=Run moduledetect script
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/moduledetect.py
+
