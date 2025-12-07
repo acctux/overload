@@ -1,14 +1,14 @@
 [Unit]
 Description=My Custom Daemon
-After=network.target
+StartLimitIntervalSec=2
+After=multi-user.target
+Wants=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/loggy.sh
-# Remove Restart to run only once
+ExecStart=/usr/local/bin/loggy.py
 User=root
-WorkingDirectory=/usr/local/bin
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
 
